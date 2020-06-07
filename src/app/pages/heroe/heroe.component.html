@@ -42,11 +42,17 @@
 
             </div>
             <hr>
-            <div class="form-group text-center">
+            <div *ngIf="!heroe.id" class="form-group text-center">
                 <button class="btn btn-primary w-25" type="submit">
                     <i class="fa fa-save"></i>
                     Guardar
                 </button>
+            </div>
+            <div *ngIf="heroe.id" class="form-group text-center">
+                <button class="btn btn-warning w-25" type="submit">
+                  <i class="fa fa-pen"></i>
+                  Editar
+              </button>
             </div>
         </form>
     </div>
