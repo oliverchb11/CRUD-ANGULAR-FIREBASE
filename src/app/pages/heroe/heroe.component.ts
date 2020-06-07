@@ -56,6 +56,7 @@ export class HeroeComponent implements OnInit {
         icon:'success',
       });
       this.createHeore();
+      form.reset();
     }
 
 
